@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d4ed8;
+  border-radius: 10px;
+}
+
+::selection {
+  background-color: #1d4fd83f;
+  color: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* main Card Component start */
+.card {
+  width: 348px;
+  height: 244px;
+}
+
+.img-card {
+  width: 124px;
+  height: 124px;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.card-Subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+/* main Card Component end */
+
+.dragover {
+  opacity: 0.6;
+}
+
+.custom-pagination span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+h1,
+span {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -3.6px;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-optical-sizing: auto;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.text-text_primary.lato.text-sm {
+  font-size: 14px !important;
+}
+
+.roboto.text-base {
+  font-size: 16px !important;
+}
+
+.background {
+  background-image: url("./assets/images/backgroungd.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background_1 {
+  background-image: url("./assets/images/background-2.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background_3 {
+  background-image: url("./assets/images/background-member.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.shadow-inner-sm {
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.15) inset !important;
+}
