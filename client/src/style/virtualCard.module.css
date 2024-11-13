@@ -1,0 +1,134 @@
+.cardOverlay {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cardContainer {
+  position: relative;
+  width: 440px;
+  min-height: 280px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 0 20px rgba(54, 84, 255, 0.6);
+}
+
+.cardHeader {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 30%;
+  background-image: url("./../assets/images/virtual-card-upper.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cardBody {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cardBody .image {
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBody .image img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.cardBody .image .memberId {
+  margin: 5px 0px;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: black;
+  text-wrap: nowrap;
+}
+
+.memberIdValue {
+  margin-top: -10px;
+  font-size: 14px !important;
+  font-weight: semi-bold;
+  color: #c8102e;
+  text-wrap: nowrap;
+}
+
+.data {
+  width: 70%;
+  font-size: 10px !important;
+  color: black;
+  @apply space-y-1;
+}
+
+.cardQR {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border-radius: 4px;
+  @apply shadow-md shadow-slate-400;
+}
+
+/* button section */
+
+.buttonContainer {
+  position: absolute;
+  top: 290px;
+  max-width: 450px;
+  width: 100%;
+  gap: 16px 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  /* @apply bg-btn_primary; */
+  background: linear-gradient(137deg, #38bdf8 10.35%, #1d4ed8 89.52%);
+  padding: 20px 16px;
+  min-width: 50px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  background: linear-gradient(137deg, #1d4ed8 10.35%, #1d4ed8 89.52%);
+}
