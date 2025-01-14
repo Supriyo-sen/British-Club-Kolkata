@@ -93,4 +93,4 @@ To deploy this project to Hostinger VPS, follow these steps:
 Upload Project Files to the VPS server.
 Install Dependencies and start the application on the server.
 Set Up the Domain and link it to the server IP.
-Configure SMTP for email notifications and set up required environment variables on the server.
+Configure SMTP for email notifications and set up required environment variables on the server...
